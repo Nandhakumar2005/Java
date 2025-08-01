@@ -1,0 +1,39 @@
+package sem_3;
+
+class Book{
+	String title;
+	String author;
+	final int bookID;
+	static int bookCounter = 1000;
+	static final String LIBRARY_NAME ="Central Library";
+	Book(){
+		title = "Unknown";
+		author = "Unknown";
+		bookID = bookCounter;
+	}
+	Book(String title,String author){
+		this.title = title;
+		this.author = author;
+		bookCounter++;
+		bookID = bookCounter;
+	}
+	public void displayInfo() {
+		System.out.println("Book Title:"+title);
+		System.out.println("Book author:"+author);
+		System.out.println("Book ID:"+bookID);
+	}
+	public void displayInfo(boolean showLibrary) {
+		if (showLibrary = true) {
+			System.out.println("Library Name:" + LIBRARY_NAME);
+		}
+	}
+	public static void diplayTotalBooks() {
+		System.out.println("The total number of Books:"+ bookCounter);
+	}
+}
+public class DemoBook {
+	public static void main (String[] args) {
+		Book book = new Book();
+		Book book = new
+	}
+}
